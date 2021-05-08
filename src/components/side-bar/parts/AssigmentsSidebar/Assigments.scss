@@ -1,0 +1,74 @@
+.assigments-option {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 15px;
+      margin-top: 50px;
+      color: rgb(167, 167, 167);
+      text-align: center;
+    }
+
+    .assigments-option-item {
+      display: flex;
+      flex-flow: row;
+      align-content: flex-start;
+      font-size: 14px;
+      padding: 5px;
+      margin-top: 10px;
+      border-radius: 8px;
+      * {
+        cursor: pointer;
+      }
+      .assigment-avatar{
+        width: 20%;
+        .assigment-avatar-wrap{
+          // padding: 15px;
+          background-color: #ccc;
+          border-radius: 10px;
+          text-align: center;
+          color: #fff;
+          font-size: 20px;
+          font-weight: 300; 
+          width: 48px;
+          height: 48px;
+          position: relative;
+          margin: 0 1px auto;
+          align-self: center;
+          label{
+            vertical-align: -webkit-baseline-middle;
+          }
+        }
+      }
+      .assigment-content {
+        width: 80%;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        label{
+
+          display: block;
+          padding-bottom: 10px;
+        }
+        .assigment-content-title{
+          text-overflow: ellipsis;
+          width: 90%;
+          height: 15px;
+          overflow: hidden;
+          white-space:nowrap;
+        }
+        .assigment-content-code{
+          font-weight: 200;
+          color: #a3a3a3;
+          padding-bottom: 0px;
+        }
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+    }
+  }

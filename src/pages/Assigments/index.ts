@@ -1,0 +1,1 @@
+export {default as Assigments} from './Assigments';

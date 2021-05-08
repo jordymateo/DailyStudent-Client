@@ -1,0 +1,21 @@
+.dx-tooltip-appointment-item-marker {
+  img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+}
+.dx-tooltip-appointment-item-content-subject-institution {
+  text-align: left;
+  color: rgb(172, 170, 170);
+}
+.dx-tooltip-appointment-item-content-subject-course {
+  text-align: left;
+}
+
+.calendar-view {
+  width: 100%;
+  height: 100%;
+  max-width: fit-content;
+  padding: 10px 5px;
+}

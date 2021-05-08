@@ -1,0 +1,165 @@
+@import "../../assets/css/variables";
+
+.course-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .course-section-header {
+    * {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+  }
+  .course-section-detail {
+    font-size: 16px;
+    color: $color-primary-red;
+    font-weight: bold;
+  }
+}
+
+.color-primary-red {
+  color: $color-primary-red;
+}
+
+.assigment-tab-panel {
+  .dx-tabpanel-tabs * {
+    box-shadow: none !important;
+  }
+  .dx-tabs {
+    background-color: transparent;
+    border-bottom: 1.5px solid #c4c4c4;
+    .dx-tab {
+      background-color: transparent;
+      width: auto;
+      padding: 8px 20px;
+      .dx-tab-text {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .dx-tab-selected {
+      &::before {
+        content: "";
+        background: #be6f72;
+        height: 4px;
+        //width: 40px;
+        min-width: 30px;
+        max-width: 60px;
+        width: 40%;
+        bottom: 0;
+        // margin: -15px 0;
+        display: block;
+        position: absolute;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+    }
+  }
+  .dx-multiview-wrapper {
+    border: none;
+    .datagrid-container {
+      padding: 0 15px 0 15px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #f0f0f0;
+      .workflow-toolbar {
+        margin: 10px 0;
+      }
+    }
+    .form-container {
+      padding: 0 20px;
+    }
+  }
+}
+
+.tab-section-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .tab-side-filters {
+    border-right: 1px solid #ccc;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .filter-option {
+      text-align: center;
+      margin-top: 2.8em;
+      padding: 5px 0;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        cursor: pointer;
+        * {
+          cursor: pointer;
+        }
+      }
+      &:active {
+        background-color: rgba(0, 0, 0, 0.15);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        cursor: pointer;
+        * {
+          cursor: pointer;
+        }
+      }
+      .filter-label {
+        color: rgb(109, 109, 109);
+        font-size: 14px;
+        font-weight: 500;
+        &::after {
+          content: "\a";
+          white-space: pre;
+        }
+      }
+      .filter-value {
+        font-size: 34px;
+        font-weight: 500;
+        color: black;
+      }
+    }
+  }
+  .tab-content {
+    width: 100%;
+    max-width: fit-content;
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow-y: auto;
+    align-content: flex-start;
+    max-height: 65vh;
+   
+  }
+}
+
+.dx-popup-wrapper.dx-overlay-modal {
+  .dx-popup-content {
+    padding-top: 0px;
+  }
+}
+
+.creation-note-title {
+  &.dx-texteditor.dx-editor-outlined {
+    border: none;
+    font-size: 30px;
+  }
+}
+
+.creation-note-date {
+  border-top: 1px solid #ccc;
+  padding-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.dx-htmleditor {
+  border: none !important;
+}

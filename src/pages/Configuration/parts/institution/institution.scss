@@ -1,0 +1,60 @@
+.institution {
+  .institution-body {
+    margin-top: 10px;
+    .institution-body-item {
+      margin-top: 15px;
+      border-radius: 10px;
+      display: flex;
+      flex-flow: row nowrap;
+      -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.25);
+    }
+
+    .institution-body-item-logo {
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    .institution-body-item-content {
+      display: flex;
+      flex-flow: column;
+      flex-basis: 100%;
+    }
+    .institution-body-item-header {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .institution-body-item-title {
+      display: flex;
+      flex-direction: column;
+    }
+    .institution-item-title-career {
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .institution-item-title-name {
+      font-size: 14px;
+      font-weight: 100;
+      color: #505050;
+    }
+    .institution-body-item-info {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      font-weight: 100;
+      color: #505050;
+      div {
+        margin-right: 15px;
+        strong {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
